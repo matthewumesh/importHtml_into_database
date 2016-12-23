@@ -1,0 +1,3317 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>National Admin</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="CpNOzPfneG69b86N1gBm1/3NeK2M4c7zFEBO1zWdtOoP+mONkCvM5G5iDdo5uZz7VzNDtVRsUbSJNm0fQvgZcQ==" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+<![endif]-->
+<script src="https://d3thk2na9w8m59.cloudfront.net/assets/ahg-5f9af18e67c5537ee3efa3df89b603fd.js" data-turbolinks-track="true"></script>
+<link rel="stylesheet" media="all" href="https://d3thk2na9w8m59.cloudfront.net/assets/ahg-admin-b9c62e42386478b4ba74c30095a5d01e.css" data-turbolinks-track="true" />
+</head>
+<body id='ahg-admin'>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container-fluid'>
+<a class="brand" href="/national">Trail Life USA</a>
+<div class='container'>
+<ul class='nav hidden-desktop'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class='fa fa-bars'></i>
+</a><ul class='dropdown-menu' role='menu'>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Settings</a>
+<ul class='dropdown-menu'>
+<li><a href="/national/charter_documents">Charter Documents</a></li>
+<li><a href="/national/leadership_position_types">Leadership Positions</a></li>
+<li><a href="/national/unit_type">National Settings</a></li>
+<li><a href="/national/regions">Regions</a></li>
+<li><a href="/national/award_types">Award Types</a></li>
+<li><a href="/national/purchaseable_items">Purchaseable Items</a></li>
+<li><a href="/national/help_pages">User Guide</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Membership</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops">Troops</a></li>
+<li><a href="/national/troop_leader_contact_changes">Troop Contact Changes</a></li>
+<li><a href="/national/users">Members</a></li>
+<li><a href="/national/troop_transfer/new">Transfer Members</a></li>
+<li><a href="/national/point_men_report">Point Men</a></li>
+<li><a href="/national/rants">RANTs</a></li>
+<li><a href="/national/background_checks">Pending CBC</a></li>
+<li><a href="/national/renewals">Pending Membership Renewals</a></li>
+<li><a href="/national/troops/summary">Summary</a></li>
+<li><a href="/national/membership_applications/trigger_training_report">Send Training Report</a></li>
+<li><a href="/national/membership_cards">Membership ID Cards</a></li>
+<li><a href="/national/troops_with_ahg">Troops With AHG Troops</a></li>
+<li><a href="/national/national_admins">National Admins</a></li>
+<li><a href="/national/fulfillment_users">Fulfillment Users</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Review</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops/incomplete">Incomplete Precharters</a></li>
+<li><a href="/national/precharter_infos">Precharters</a></li>
+<li><a href="/national/cbc_needed_report">New Members - CBC Needed</a></li>
+<li><a href="/national/pending_members_report">New Members - Pending Approval</a></li>
+<li><a href="/national/pending_regional_members_report">New Regional Members - Pending Approval</a></li>
+<li><a href="/national/charters">Charters</a></li>
+<li><a href="/national/charter_renewals">Charter Renewals</a></li>
+<li><a href="/national/membership_applications">Membership Applications</a></li>
+<li>
+<a href="/national/merge_users">Merge Users
+<span class='badge badge-info'>
+New
+</span>
+</a></li>
+<li><a href="/national/duplicates_groups">Duplicate Users</a></li>
+<li><a href="/national/expired_users">Expired Users</a></li>
+<li><a href="/national/orders">Orders</a></li>
+<li><a href="/national/order_line_items">Items Sold</a></li>
+<li><a href="/national/inventory_summary">Inventory Summary</a></li>
+<li><a href="/national/fees">Fees</a></li>
+<li><a href="/national/badge_book">Badge Book</a></li>
+<li><a href="/national/opted_for_emails">Opted For Partner Emails</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Content</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troop_documents">Troop Documents</a></li>
+<li><a href="/national/leader_pages">Leader Pages</a></li>
+<li><a href="/national/point_man_pages">Point Man Pages</a></li>
+<li><a href="/national/messages">Messages</a></li>
+</ul>
+
+</li>
+
+</ul>
+</li>
+</ul>
+<ul class='nav visible-desktop'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Settings<b class="caret"></b></span></a>
+<ul class='dropdown-menu'>
+<li><a href="/national/charter_documents">Charter Documents</a></li>
+<li><a href="/national/leadership_position_types">Leadership Positions</a></li>
+<li><a href="/national/unit_type">National Settings</a></li>
+<li><a href="/national/regions">Regions</a></li>
+<li><a href="/national/award_types">Award Types</a></li>
+<li><a href="/national/purchaseable_items">Purchaseable Items</a></li>
+<li><a href="/national/help_pages">User Guide</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Membership<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops">Troops</a></li>
+<li><a href="/national/troop_leader_contact_changes">Troop Contact Changes</a></li>
+<li><a href="/national/users">Members</a></li>
+<li><a href="/national/troop_transfer/new">Transfer Members</a></li>
+<li><a href="/national/point_men_report">Point Men</a></li>
+<li><a href="/national/rants">RANTs</a></li>
+<li><a href="/national/background_checks">Pending CBC</a></li>
+<li><a href="/national/renewals">Pending Membership Renewals</a></li>
+<li><a href="/national/troops/summary">Summary</a></li>
+<li><a href="/national/membership_applications/trigger_training_report">Send Training Report</a></li>
+<li><a href="/national/membership_cards">Membership ID Cards</a></li>
+<li><a href="/national/troops_with_ahg">Troops With AHG Troops</a></li>
+<li><a href="/national/national_admins">National Admins</a></li>
+<li><a href="/national/fulfillment_users">Fulfillment Users</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Review<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops/incomplete">Incomplete Precharters</a></li>
+<li><a href="/national/precharter_infos">Precharters</a></li>
+<li><a href="/national/cbc_needed_report">New Members - CBC Needed</a></li>
+<li><a href="/national/pending_members_report">New Members - Pending Approval</a></li>
+<li><a href="/national/pending_regional_members_report">New Regional Members - Pending Approval</a></li>
+<li><a href="/national/charters">Charters</a></li>
+<li><a href="/national/charter_renewals">Charter Renewals</a></li>
+<li><a href="/national/membership_applications">Membership Applications</a></li>
+<li>
+<a href="/national/merge_users">Merge Users
+<span class='badge badge-info'>
+New
+</span>
+</a></li>
+<li><a href="/national/duplicates_groups">Duplicate Users</a></li>
+<li><a href="/national/expired_users">Expired Users</a></li>
+<li><a href="/national/orders">Orders</a></li>
+<li><a href="/national/order_line_items">Items Sold</a></li>
+<li><a href="/national/inventory_summary">Inventory Summary</a></li>
+<li><a href="/national/fees">Fees</a></li>
+<li><a href="/national/badge_book">Badge Book</a></li>
+<li><a href="/national/opted_for_emails">Opted For Partner Emails</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Content<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troop_documents">Troop Documents</a></li>
+<li><a href="/national/leader_pages">Leader Pages</a></li>
+<li><a href="/national/point_man_pages">Point Man Pages</a></li>
+<li><a href="/national/messages">Messages</a></li>
+</ul>
+
+</li>
+
+</ul>
+<ul class='nav pull-right'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>laurab@traillifeusa.com<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a rel="nofollow" data-method="delete" href="/national_admins/sign_out">Log Out</a></li>
+</ul>
+</li>
+</ul>
+<div class='navbar-form pull-right small'>
+<form action="/national/troops" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="number" id="number" class="search-query" placeholder="Troops" />
+</form>
+
+</div>
+<div class='navbar-form pull-right small'>
+<form action="/national/users" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="last_name" id="last_name" class="search-query" placeholder="Members" />
+<input type="hidden" name="membership_status" id="membership_status" />
+<input type="hidden" name="position_id" id="position_id" />
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='span12'>
+<div class='modal hide fade' id='the_modal'></div>
+<div class='modal hide fade' id='the_wide_modal'></div>
+
+
+<h1>
+Troop AK-0226
+<small>https://tl-ak-0226/trooptrack.com</small>
+</h1>
+<div class='btn-group'>
+<a class="btn" href="/national/troops/3299/edit">Edit</a>
+<a class="btn" href="/national/precharter_infos/399/edit">Edit Precharter Info</a>
+<a data-confirm="Are you sure you want to CLOSE this precharter request?" class="btn" rel="nofollow" data-method="patch" href="/national/precharter_infos/399/close">Close Precharter</a>
+<a class="btn" href="/national/charters/17">Review Charter Application</a>
+<a class="btn btn-danger" href="/national/troop_closures/3299">Close Troop</a>
+</div>
+<br>
+<br>
+<ul class='nav nav-tabs'>
+<li class='active'><a data-toggle="tab" href="#leadership">Leadership</a></li>
+<li><a data-toggle="tab" href="#boys">Boys</a></li>
+<li><a data-toggle="tab" href="#members">Adult Members</a></li>
+<li><a data-toggle="tab" href="#notes">Notes &amp; Files</a></li>
+<li><a data-toggle="tab" href="#pm-notes">PM Notes</a></li>
+<li><a data-toggle="tab" href="#precharter">Precharter Info</a></li>
+<li><a data-toggle="tab" href="#charters">Charters</a></li>
+<li><a data-toggle="tab" href="#org_info">Org Info</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active' id='leadership'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Positions</th>
+<th>Troop</th>
+</tr>
+</thead>
+<tbody>
+<tr id='user_80838'>
+<td>
+TLUSA-241626
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-01-04</dd>
+<dt>Expires On</dt>
+<dd>01/15/2018</dd>
+</td>
+<td>
+<strong><a href="/national/users/80838">Brooks, John D </a></strong>
+<br>
+<a href="/national/membership_applications/165">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+TrailLifeUSA.Alaska@gmail.com
+</dt>
+<dd>(678) 491-0780(c)</dd>
+<dd> (907) 622-5727(h)</dd>
+<dd> (907) 269-7888(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2015-12-15</dd>
+<dt>Completed</dt>
+<dd>
+2016-01-04
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Area Point Man</dd>
+<dd>Charter Organization Representative</dd>
+<dd>Trail Guide - Woodlands Trail</dd>
+<dd>Charter Organization Institutional Head (Senior Pastor, etc)</dd>
+</dl>
+</td>
+<td>Mountain Lion</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2013-10-11 
+</li>
+<li>
+ $39.00 on 2013-11-12 
+</li>
+<li>
+ $325.00 on 2014-01-15 
+</li>
+<li>
+ $30.00 on 2014-11-13 
+</li>
+<li>
+ $26.00 on 2014-12-02 
+</li>
+<li>
+ $26.00 on 2014-12-02 
+</li>
+<li>
+ $26.00 on 2014-12-02 
+</li>
+<li>
+ $195.00 on 2014-12-31 
+</li>
+<li>
+ $100.00 on 2015-09-28 
+</li>
+<li>
+ $26.00 on 2015-12-11 
+</li>
+<li>
+ $26.00 on 2015-12-11 
+</li>
+<li>
+ $26.00 on 2015-12-11 
+</li>
+<li>
+ $195.00 on 2016-02-02 
+</li>
+<li>
+ $20.00 on 2016-02-05 
+</li>
+<li>
+ $26.00 on 2016-12-01 
+</li>
+<li>
+ $26.00 on 2016-12-01 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/80838/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/80838">No Emails</a>
+<a class="btn" href="/national/membership_applications/165">Membership Application</a>
+</div>
+</td>
+</tr>
+<tr id='user_106492'>
+<td>
+TLUSA-186526
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-02-25</dd>
+<dt>Expires On</dt>
+<dd>10/01/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/106492">Brooks, Linda J </a></strong>
+<br>
+<a href="/national/membership_applications/6506">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+joyce.brooks@hotmail.com
+</dt>
+<dd>(678) 491-1592(c)</dd>
+<dd> (907) 622-5727(h)</dd>
+<dd> (678) 491-1592(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-08-25</dd>
+<dt>Completed</dt>
+<dd>
+2016-12-07
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td></td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-02-24 
+</li>
+<li>
+ $26.00 on 2015-10-26 
+</li>
+<li>
+ $26.00 on 2016-08-24 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/106492/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/106492">Emails</a>
+<a class="btn" href="/national/membership_applications/6506">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Brooks, Linda J ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/6506">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_107831'>
+<td>
+2015-255409
+INACTIVE
+<dt>Certified by Danny Brooks</dt>
+<dd>2015-01-05</dd>
+<dt>Expires On</dt>
+<dd>03/27/2016</dd>
+</td>
+<td>
+<strong><a href="/national/users/107831">Densmore, Anora  </a></strong>
+<br>
+<a href="/national/membership_applications/21912">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+Anora@TheDensmores.com
+</dt>
+<dd>(405) 532-0216(c)</dd>
+<dd> (405) 532-0216(h)</dd>
+<dd> (405) 532-0216(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2015-01-06</dd>
+<dt>Completed</dt>
+<dd>
+2015-03-27
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+<dl>
+<dt>Positions Applied For</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td></td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2015-01-05 
+</li>
+<li>
+ $26.00 on 2015-01-05 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/107831/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/107831">Emails</a>
+<a class="btn" href="/national/membership_applications/21912">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Densmore, Anora  ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/21912">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_88785'>
+<td>
+TLUSA-570385
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-01-04</dd>
+<dt>Expires On</dt>
+<dd>01/15/2018</dd>
+</td>
+<td>
+<strong><a href="/national/users/88785">Duffy, Steve P </a></strong>
+<br>
+<a href="/national/membership_applications/331">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+travlnduffys@yahoo.com
+</dt>
+<dd>(808) 781-8619(c)</dd>
+<dd> (907) 726-0494(h)</dd>
+<dd> (907) 552-2244(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-01-11</dd>
+<dt>Completed</dt>
+<dd>
+2016-01-12
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Troopmaster</dd>
+</dl>
+</td>
+<td>Leadership / Board</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2013-12-03 
+</li>
+<li>
+ $26.00 on 2014-12-08 
+</li>
+<li>
+ $26.00 on 2014-12-08 
+</li>
+<li>
+ $26.00 on 2014-12-08 
+</li>
+<li>
+ $26.00 on 2016-01-10 
+</li>
+<li>
+ $26.00 on 2016-01-10 
+</li>
+<li>
+ $26.00 on 2016-01-10 
+</li>
+<li>
+ $26.00 on 2016-12-04 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/88785/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/88785">No Emails</a>
+<a class="btn" href="/national/membership_applications/331">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Duffy, Steve P ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/331">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_209471'>
+<td>
+2015-330957
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2015-02-17</dd>
+<dt>Expires On</dt>
+<dd>03/03/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/209471">Elledge, David R </a></strong>
+<br>
+<a href="/national/membership_applications/23497">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+elledgedavid@yahoo.com
+</dt>
+<dd>(907) 354-8746(c)</dd>
+<dd> (907) 357-3939(h)</dd>
+<dd> (907) 271-2230(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2015-02-17</dd>
+<dt>Completed</dt>
+<dd>
+2015-03-03
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td>navigators</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2015-02-16 
+</li>
+<li>
+ $26.00 on 2016-02-23 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/209471/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/209471">No Emails</a>
+<a class="btn" href="/national/membership_applications/23497">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Elledge, David R ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/23497">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_200751'>
+<td>
+TLUSA-180779
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-12-11</dd>
+<dt>Expires On</dt>
+<dd>12/27/2016</dd>
+</td>
+<td>
+<strong><a href="/national/users/200751">Elledge, Pamela A </a></strong>
+<br>
+<a href="/national/membership_applications/23496">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+pamikin2002@yahoo.com
+</dt>
+<dd>(907) 354-8740(c)</dd>
+<dd> (907) 357-3939(h)</dd>
+<dd> (907) 357-3939(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2014-12-11</dd>
+<dt>Completed</dt>
+<dd>
+<a class="btn" href="/national/membership_applications/23496/record_training">Mark Training Completed</a>
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td></td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-12-11 
+</li>
+<li>
+ $26.00 on 2015-10-19 
+</li>
+<li>
+ $26.00 on 2015-12-07 
+</li>
+<li>
+ $26.00 on 2016-10-29 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/200751/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/200751">No Emails</a>
+<a class="btn" href="/national/membership_applications/23496">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Elledge, Pamela A ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/23496">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_107336'>
+<td>
+2015-302953
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2015-07-06</dd>
+<dt>Expires On</dt>
+<dd>07/30/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/107336">Irsik, Christopher R </a></strong>
+<br>
+<a href="/national/membership_applications/7669">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+irsikc@gmail.com
+</dt>
+<dd>(907) 232-1035(c)</dd>
+<dd> (907) 746-0595(h)</dd>
+<dd> (907) 271-2913(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2015-01-26</dd>
+<dt>Completed</dt>
+<dd>
+2015-07-30
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Trail Guide - Woodlands Trail</dd>
+</dl>
+</td>
+<td></td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2015-01-25 
+</li>
+<li>
+ $26.00 on 2016-02-01 
+</li>
+<li>
+ $26.00 on 2016-08-02 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/107336/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/107336">No Emails</a>
+<a class="btn" href="/national/membership_applications/7669">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Irsik, Christopher R ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/7669">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_160959'>
+<td>
+2015-902931
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-08-27</dd>
+<dt>Expires On</dt>
+<dd>07/30/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/160959">Irsik, Donna D </a></strong>
+<br>
+<a href="/national/membership_applications/17227">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+donnairsik@hotmail.com
+</dt>
+<dd>(907) 841-2527(c)</dd>
+<dd> (907) 746-0595(h)</dd>
+<dd> (907) 746-0595(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2014-08-27</dd>
+<dt>Completed</dt>
+<dd>
+2015-07-30
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td></td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-08-27 
+</li>
+<li>
+ $26.00 on 2016-09-15 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/160959/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/160959">No Emails</a>
+<a class="btn" href="/national/membership_applications/17227">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Irsik, Donna D ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/17227">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_420211'>
+<td>
+2016-983726
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2016-10-03</dd>
+<dt>Expires On</dt>
+<dd>10/04/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/420211">Lee, Yi-Lin  </a></strong>
+<br>
+<a href="/national/membership_applications/44883">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+yilinlee@hotmail.com
+</dt>
+<dd>(425) 420-6400(c)</dd>
+<dd> (425) 420-6400(h)</dd>
+<dd> (206) 271-6809(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-10-03</dd>
+<dt>Completed</dt>
+<dd>
+2016-10-04
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td>Fox</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2016-10-03 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/420211/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/420211">No Emails</a>
+<a class="btn" href="/national/membership_applications/44883">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Lee, Yi-Lin  ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/44883">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_312996'>
+<td>
+2015-439366
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2015-10-11</dd>
+<dt>Expires On</dt>
+<dd>12/28/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/312996">Magee, Ryan P </a></strong>
+<br>
+<a href="/national/membership_applications/34193">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+rmagee4570@gmail.com
+</dt>
+<dd>(907) 398-9424(c)</dd>
+<dd> (907) 373-9276(h)</dd>
+<dd> (907) 398-9424(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2015-10-12</dd>
+<dt>Completed</dt>
+<dd>
+2015-12-28
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td>Hawk</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2015-10-10 
+</li>
+<li>
+ $26.00 on 2016-11-28 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/312996/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/312996">No Emails</a>
+<a class="btn" href="/national/membership_applications/34193">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Magee, Ryan P ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/34193">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_97099'>
+<td>
+TLUSA-642689
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-01-16</dd>
+<dt>Expires On</dt>
+<dd>01/29/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/97099">Patteson, Curtis  </a></strong>
+<br>
+<a href="/national/membership_applications/3402">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+curtispatteson@msn.com
+</dt>
+<dd>(907) 306-9166(c)</dd>
+<dd> (907) 743-0649(h)</dd>
+<dd> (907) 306-9166(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2015-12-17</dd>
+<dt>Completed</dt>
+<dd>
+2016-01-13
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Trail Guide - Woodlands Trail</dd>
+<dd>Troop Committee Chairperson</dd>
+</dl>
+</td>
+<td>Hawk</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-01-16 
+</li>
+<li>
+ $26.00 on 2015-01-06 
+</li>
+<li>
+ $26.00 on 2015-01-06 
+</li>
+<li>
+ $26.00 on 2015-01-06 
+</li>
+<li>
+ $26.00 on 2015-12-15 
+</li>
+<li>
+ $26.00 on 2016-01-17 
+</li>
+<li>
+ $26.00 on 2016-01-17 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/97099/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/97099">No Emails</a>
+<a class="btn" href="/national/membership_applications/3402">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Patteson, Curtis  ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/3402">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_192012'>
+<td>
+2015-219631
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-10-14</dd>
+<dt>Expires On</dt>
+<dd>01/06/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/192012">Pettit, Glen A </a></strong>
+<br>
+<a href="/national/membership_applications/21272">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+pettit.glen@gmail.com
+</dt>
+<dd>(907) 360-4829(c)</dd>
+<dd> (907) 688-0876(h)</dd>
+<dd> (907) 271-5260(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2014-10-14</dd>
+<dt>Completed</dt>
+<dd>
+<a class="btn" href="/national/membership_applications/21272/record_training">Mark Training Completed</a>
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Troop Chaplain</dd>
+</dl>
+</td>
+<td>Leadership / Board</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-10-13 
+</li>
+<li>
+ $26.00 on 2015-11-24 
+</li>
+<li>
+ $26.00 on 2015-11-24 
+</li>
+<li>
+ $26.00 on 2016-01-16 
+</li>
+<li>
+ $26.00 on 2016-08-30 
+</li>
+<li>
+ $26.00 on 2016-08-30 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/192012/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/192012">No Emails</a>
+<a class="btn" href="/national/membership_applications/21272">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Pettit, Glen A ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/21272">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_97109'>
+<td>
+TLUSA-844154
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-02-11</dd>
+<dt>Expires On</dt>
+<dd>03/07/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/97109">Phillips, Jon C </a></strong>
+<br>
+<a href="/national/membership_applications/6857">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+grunspinner@yahoo.com
+</dt>
+<dd>(254) 415-2460(c)</dd>
+<dd> (254) 319-6242(h)</dd>
+<dd> (254) 415-2460(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-02-08</dd>
+<dt>Completed</dt>
+<dd>
+2016-03-22
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Trail Guide - Woodlands Trail</dd>
+</dl>
+</td>
+<td>Mountain Lion</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-02-10 
+</li>
+<li>
+ $26.00 on 2015-02-23 
+</li>
+<li>
+ $26.00 on 2015-02-23 
+</li>
+<li>
+ $26.00 on 2016-01-08 
+</li>
+<li>
+ $26.00 on 2016-02-08 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/97109/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/97109">No Emails</a>
+<a class="btn" href="/national/membership_applications/6857">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Phillips, Jon C ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/6857">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_420207'>
+<td>
+2016-971628
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2016-09-27</dd>
+<dt>Expires On</dt>
+<dd>09/27/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/420207">Severns, Andrew R </a></strong>
+<br>
+<a href="/national/membership_applications/44882">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+severnsa@gmail.com
+</dt>
+<dd>(541) 805-9196(c)</dd>
+<dd> (541) 510-9358(h)</dd>
+<dd> (907) 580-2804(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-09-21</dd>
+<dt>Completed</dt>
+<dd>
+2016-09-27
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Registered Adult</dd>
+</dl>
+</td>
+<td>Fox</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2016-09-21 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/420207/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/420207">No Emails</a>
+<a class="btn" href="/national/membership_applications/44882">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Severns, Andrew R ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/44882">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_88786'>
+<td>
+TLUSA-023232
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-01-04</dd>
+<dt>Expires On</dt>
+<dd>01/15/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/88786">Story, Dana  </a></strong>
+<br>
+<a href="/national/membership_applications/332">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+ewdys95@yahoo.com
+</dt>
+<dd>(910) 987-7907(c)</dd>
+<dd> (910) 987-7907(h)</dd>
+<dd> (910) 987-7907(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-01-12</dd>
+<dt>Completed</dt>
+<dd>
+2016-01-29
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Troop Treasurer</dd>
+</dl>
+</td>
+<td>Leadership / Board</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2013-12-03 
+</li>
+<li>
+ $210.00 on 2014-10-27 
+</li>
+<li>
+ $875.00 on 2014-10-30 
+</li>
+<li>
+ $26.00 on 2015-01-15 
+</li>
+<li>
+ $740.00 on 2015-07-13 
+</li>
+<li>
+ $26.00 on 2016-01-11 
+</li>
+<li>
+ $440.00 on 2016-04-04 
+</li>
+<li>
+ $660.00 on 2016-08-01 
+</li>
+<li>
+ $26.00 on 2016-08-16 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/88786/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/88786">No Emails</a>
+<a class="btn" href="/national/membership_applications/332">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Story, Dana  ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/332">Delete</a>
+</div>
+</td>
+</tr>
+<tr id='user_97101'>
+<td>
+TLUSA-287273
+APPROVED
+<dt>Certified by Danny Brooks</dt>
+<dd>2014-01-16</dd>
+<dt>Expires On</dt>
+<dd>02/01/2017</dd>
+</td>
+<td>
+<strong><a href="/national/users/97101">Story, Eric W </a></strong>
+<br>
+<a href="/national/membership_applications/3403">Membership Application</a>
+</td>
+<td>
+<dl>
+<dt>
+eric739598@gmail.com
+</dt>
+<dd>(910) 987-7912(c)</dd>
+<dd> (910) 987-7912(h)</dd>
+<dd> (907) 384-8184(w)</dd>
+</dl>
+</td>
+<td>
+<dt>Ordered</dt>
+<dd>2016-02-16</dd>
+<dt>Completed</dt>
+<dd>
+2016-02-25
+</dd>
+<ul>
+<li>Child Safety Youth Protection Training</li>
+<li>Child Safety Youth Protection Training</li>
+</ul>
+</td>
+<td>
+<dl>
+<dt>Current Positions</dt>
+<dd>Trail Guide - Woodlands Trail</dd>
+</dl>
+</td>
+<td>Leadership / Board</td>
+<td>
+<a href="/national/troops/3299">AK-0226</a>
+</td>
+<td>
+<ul class='unstyled'>
+<li>
+ $26.00 on 2014-01-16 
+</li>
+<li>
+ $26.00 on 2015-02-01 
+</li>
+<li>
+ $26.00 on 2015-02-01 
+</li>
+<li>
+ $26.00 on 2015-02-01 
+</li>
+<li>
+ $827.00 on 2015-05-07 
+</li>
+<li>
+ $26.00 on 2016-02-15 
+</li>
+<li>
+ $26.00 on 2016-02-15 
+</li>
+<li>
+ $26.00 on 2016-02-15 
+</li>
+</ul>
+</td>
+<td>
+<div class='btn-group btn-group-vertical'>
+<a class="btn" href="/national/users/97101/fees/new">Create Fee</a>
+<a class="btn" href="/national/no_emails/97101">No Emails</a>
+<a class="btn" href="/national/membership_applications/3403">Membership Application</a>
+<a data-method="delete" data-remote="true" data-confirm="Are you absolutely sure you want to delete Story, Eric W ? This is a PERMANENT and IRREVERSIBLE change. Saying please won&#39;t help if you delete someone you shouldn&#39;t. Sometimes Charter Leaders won&#39;t apply for a position, so be careful not to accidentally delete them. If a person has a duplicate record and one of them is a charter leader please open a ticket and do NOT delete them." data-disable-with="Please wait..." class="btn btn-danger" href="/national/membership_applications/3403">Delete</a>
+</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div class='tab-pane' id='boys'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Expires On</th>
+<th>Age</th>
+<th>Unit</th>
+<th>Payment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TLUSA-908271</td>
+<td>
+<dl>
+<dt><a href="/national/users/131670">Barnhill, Elijah  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>05/17/2017</td>
+<td>13</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-05-16 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-288683</td>
+<td>
+<dl>
+<dt><a href="/national/users/110280">Betson, Gabriel</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>02/19/2017</td>
+<td>15</td>
+<td>Adventurer</td>
+<td>
+<li>
+ $26.00 on 2014-02-19 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-284235</td>
+<td>
+<dl>
+<dt><a href="/national/users/96478">Brooks, Daniel C </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>01/15/2018</td>
+<td>13</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-01-15 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-137413</td>
+<td>
+<dl>
+<dt><a href="/national/users/96480">Brooks, James  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>01/15/2018</td>
+<td>9</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2014-01-15 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-151737 DECEASED</td>
+<td>
+<dl>
+<dt><a href="/national/users/96479">Brooks, Joshua  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>01/15/2017</td>
+<td>11</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-01-15 
+</li>
+</td>
+</tr>
+<tr>
+<td>2016-692417</td>
+<td>
+<dl>
+<dt><a href="/national/users/439539">Buchanan, Ethan</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>10/06/2017</td>
+<td>8</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2016-10-06 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-849487</td>
+<td>
+<dl>
+<dt><a href="/national/users/290223">Crowe, Zachary</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>09/10/2017</td>
+<td>11</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2015-09-10 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-946637</td>
+<td>
+<dl>
+<dt><a href="/national/users/98921">Duffy, Gabriel  </a></dt>
+<dd>(808) 781-8619(c), (907) 726-0494(h)</dd>
+<dd>travlnduffys@yahoo.com</dd>
+</dl>
+</td>
+<td>01/20/2017</td>
+<td>9</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2014-01-20 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-630484</td>
+<td>
+<dl>
+<dt><a href="/national/users/98920">Duffy, Sean  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>01/20/2017</td>
+<td>14</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-01-20 
+</li>
+</td>
+</tr>
+<tr>
+<td>2016-050917</td>
+<td>
+<dl>
+<dt><a href="/national/users/413715">Duffy, Timothy</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>09/07/2017</td>
+<td>7</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2016-09-06 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-416441</td>
+<td>
+<dl>
+<dt><a href="/national/users/109434">Dyer, Micaiah  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>02/17/2016</td>
+<td>15</td>
+<td>Adventurer</td>
+<td>
+<li>
+ $26.00 on 2014-02-16 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-462716</td>
+<td>
+<dl>
+<dt><a href="/national/users/109436">Dyer, Taval  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>02/17/2016</td>
+<td>11</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2014-02-16 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-049939</td>
+<td>
+<dl>
+<dt><a href="/national/users/201011">Elledge, Craig</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>10/29/2017</td>
+<td>11</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-10-28 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-703764</td>
+<td>
+<dl>
+<dt><a href="/national/users/108712">Irsik, Anthony  </a></dt>
+<dd></dd>
+<dd>airsik@hotmail.com</dd>
+</dl>
+</td>
+<td>02/15/2017</td>
+<td>17</td>
+<td>Adventurer</td>
+<td>
+<li>
+ $26.00 on 2014-02-14 
+</li>
+</td>
+</tr>
+<tr>
+<td>2016-145827</td>
+<td>
+<dl>
+<dt><a href="/national/users/418951">Lee, Gregory</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>09/13/2017</td>
+<td>7</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2016-09-13 
+</li>
+</td>
+</tr>
+<tr>
+<td>2016-132058</td>
+<td>
+<dl>
+<dt><a href="/national/users/396935">Lee, Theodore</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>09/13/2017</td>
+<td>10</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2016-09-13 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-427741</td>
+<td>
+<dl>
+<dt><a href="/national/users/261667">Magee, Carter</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>07/30/2017</td>
+<td>11</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2015-07-30 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-920429</td>
+<td>
+<dl>
+<dt><a href="/national/users/261666">Magee, Logan</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>07/30/2017</td>
+<td>12</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2015-07-30 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-677926</td>
+<td>
+<dl>
+<dt><a href="/national/users/277267">McKinnie, Dawson</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>08/28/2017</td>
+<td>10</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2015-08-28 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-779982</td>
+<td>
+<dl>
+<dt><a href="/national/users/96496">Patteson, Daniel  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>01/15/2017</td>
+<td>8</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2014-01-15 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-479498</td>
+<td>
+<dl>
+<dt><a href="/national/users/96495">Patteson, James  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>01/15/2017</td>
+<td>10</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2014-01-15 
+</li>
+</td>
+</tr>
+<tr>
+<td>2016-583860</td>
+<td>
+<dl>
+<dt><a href="/national/users/402705">Patteson, Nathan</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>08/24/2017</td>
+<td>6</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2016-08-23 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-004768</td>
+<td>
+<dl>
+<dt><a href="/national/users/195412">Pettit, Michael</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>10/14/2017</td>
+<td>12</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-10-13 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-787522</td>
+<td>
+<dl>
+<dt><a href="/national/users/195408">Pettit, Timothy</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>10/14/2017</td>
+<td>15</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2014-10-13 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-371696</td>
+<td>
+<dl>
+<dt><a href="/national/users/103168">Phillips, Jake  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>02/05/2017</td>
+<td>11</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2014-02-04 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-437878</td>
+<td>
+<dl>
+<dt><a href="/national/users/161584">Rose, Elijah  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>08/27/2017</td>
+<td>15</td>
+<td>Adventurer</td>
+<td>
+<li>
+ $26.00 on 2014-08-26 
+</li>
+</td>
+</tr>
+<tr>
+<td>2016-110120</td>
+<td>
+<dl>
+<dt><a href="/national/users/433495">Severns, Andrew J</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>09/28/2017</td>
+<td>9</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2016-09-27 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-172351</td>
+<td>
+<dl>
+<dt><a href="/national/users/279835">Story, Keegan </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>08/31/2017</td>
+<td>6</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2015-08-31 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-247329</td>
+<td>
+<dl>
+<dt><a href="/national/users/99076">Story, Wesley  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>02/02/2017</td>
+<td>9</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2014-02-01 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-078618</td>
+<td>
+<dl>
+<dt><a href="/national/users/99077">Story, Wyatt  </a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>02/02/2017</td>
+<td>8</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2014-02-01 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-336926</td>
+<td>
+<dl>
+<dt><a href="/national/users/275545">Webster, Maxson</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>08/25/2017</td>
+<td>8</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2015-08-25 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-932936</td>
+<td>
+<dl>
+<dt><a href="/national/users/275546">Webster, Noah</a></dt>
+<dd></dd>
+<dd></dd>
+</dl>
+</td>
+<td>08/25/2017</td>
+<td>6</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2015-08-25 
+</li>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div class='tab-pane' id='members'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Expires On</th>
+<th>Age</th>
+<th>Unit</th>
+<th>Payment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TLUSA-347300</td>
+<td>
+<dl>
+<dt><a href="/national/users/91709">Barnhill, Billy  JR</a></dt>
+<dd>(907) 231-4567(c), (907) 622-0055(h), (907) 231-4567(w)</dd>
+<dd>Sorenw75@hotmail.com</dd>
+</dl>
+</td>
+<td>01/15/2017</td>
+<td>41</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-08-24 
+</li>
+<li>
+ $26.00 on 2016-10-10 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/110030">Betson, Elisa  </a></dt>
+<dd>(907) 863-0377(c), (907) 696-0311(h), (907) 694-6002(w)</dd>
+<dd>elisankids@hotmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2016-05-11 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/420205">Bobo, Jacob</a></dt>
+<dd></dd>
+<dd>jbobo1985@yahoo.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TLUSA-241626</td>
+<td>
+<dl>
+<dt><a href="/national/users/80838">Brooks, John D </a></dt>
+<dd>(678) 491-0780(c), (907) 622-5727(h), (907) 269-7888(w)</dd>
+<dd>TrailLifeUSA.Alaska@gmail.com</dd>
+</dl>
+</td>
+<td>01/15/2018</td>
+<td>46</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2013-10-11 
+</li>
+<li>
+ $39.00 on 2013-11-12 
+</li>
+<li>
+ $325.00 on 2014-01-15 
+</li>
+<li>
+ $30.00 on 2014-11-13 
+</li>
+<li>
+ $26.00 on 2014-12-02 
+</li>
+<li>
+ $26.00 on 2014-12-02 
+</li>
+<li>
+ $26.00 on 2014-12-02 
+</li>
+<li>
+ $195.00 on 2014-12-31 
+</li>
+<li>
+ $100.00 on 2015-09-28 
+</li>
+<li>
+ $26.00 on 2015-12-11 
+</li>
+<li>
+ $26.00 on 2015-12-11 
+</li>
+<li>
+ $26.00 on 2015-12-11 
+</li>
+<li>
+ $195.00 on 2016-02-02 
+</li>
+<li>
+ $20.00 on 2016-02-05 
+</li>
+<li>
+ $26.00 on 2016-12-01 
+</li>
+<li>
+ $26.00 on 2016-12-01 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-186526</td>
+<td>
+<dl>
+<dt><a href="/national/users/106492">Brooks, Linda J </a></dt>
+<dd>(678) 491-1592(c), (907) 622-5727(h), (678) 491-1592(w)</dd>
+<dd>joyce.brooks@hotmail.com</dd>
+</dl>
+</td>
+<td>10/01/2017</td>
+<td>40</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2014-02-24 
+</li>
+<li>
+ $26.00 on 2015-10-26 
+</li>
+<li>
+ $26.00 on 2016-08-24 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/382818">Brown, Benjamin</a></dt>
+<dd></dd>
+<dd>mamaben11@aol.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/107339">Chambers, Lynde</a></dt>
+<dd>(907) 727-6414(h)</dd>
+<dd>slktnak@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/275917">Crowe, Kristy</a></dt>
+<dd>(907) 242-1311(c), (907) 240-9870(h)</dd>
+<dd>nolesgirl524@yahoo.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2016-09-01 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/312985">Dennis, Aaron</a></dt>
+<dd>(907) 317-3004(c), (907) 317-6599(h)</dd>
+<dd>accounts@walkngrace.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>2015-255409</td>
+<td>
+<dl>
+<dt><a href="/national/users/107831">Densmore, Anora  </a></dt>
+<dd>(405) 532-0216(c), (405) 532-0216(h), (405) 532-0216(w)</dd>
+<dd>Anora@TheDensmores.com</dd>
+</dl>
+</td>
+<td>03/27/2016</td>
+<td>40</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-01-05 
+</li>
+<li>
+ $26.00 on 2015-01-05 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/107287">Densmore, Michael W </a></dt>
+<dd>(405) 512-9042(c), (405) 512-9042(h), (907) 552-4802(w)</dd>
+<dd>bigmick73@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td>43</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-01-05 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-570385</td>
+<td>
+<dl>
+<dt><a href="/national/users/88785">Duffy, Steve P </a></dt>
+<dd>(808) 781-8619(c), (907) 726-0494(h), (907) 552-2244(w)</dd>
+<dd>travlnduffys@yahoo.com</dd>
+</dl>
+</td>
+<td>01/15/2018</td>
+<td>41</td>
+<td>Leadership / Board</td>
+<td>
+<li>
+ $26.00 on 2013-12-03 
+</li>
+<li>
+ $26.00 on 2014-12-08 
+</li>
+<li>
+ $26.00 on 2014-12-08 
+</li>
+<li>
+ $26.00 on 2014-12-08 
+</li>
+<li>
+ $26.00 on 2016-01-10 
+</li>
+<li>
+ $26.00 on 2016-01-10 
+</li>
+<li>
+ $26.00 on 2016-01-10 
+</li>
+<li>
+ $26.00 on 2016-12-04 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/413475">Duffy, Steve</a></dt>
+<dd></dd>
+<dd>steveduffyak@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/107294">Dyer, Dahlia  </a></dt>
+<dd>(907) 903-5905(c), (907) 745-5905(h), (907) 903-5905(w)</dd>
+<dd>wadudu@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td>38</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-02-04 
+</li>
+<li>
+ $26.00 on 2015-02-04 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/198133">Dyer, David  </a></dt>
+<dd>(907) 903-5906(c), (907) 745-5905(h), (907) 903-5906(w)</dd>
+<dd>wadudu@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td>38</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2014-10-21 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-330957</td>
+<td>
+<dl>
+<dt><a href="/national/users/209471">Elledge, David R </a></dt>
+<dd>(907) 354-8746(c), (907) 357-3939(h), (907) 271-2230(w)</dd>
+<dd>elledgedavid@yahoo.com</dd>
+</dl>
+</td>
+<td>03/03/2017</td>
+<td>54</td>
+<td>navigators</td>
+<td>
+<li>
+ $26.00 on 2015-02-16 
+</li>
+<li>
+ $26.00 on 2016-02-23 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-180779</td>
+<td>
+<dl>
+<dt><a href="/national/users/200751">Elledge, Pamela A </a></dt>
+<dd>(907) 354-8740(c), (907) 357-3939(h), (907) 357-3939(w)</dd>
+<dd>pamikin2002@yahoo.com</dd>
+</dl>
+</td>
+<td>12/27/2016</td>
+<td>46</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2014-12-11 
+</li>
+<li>
+ $26.00 on 2015-10-19 
+</li>
+<li>
+ $26.00 on 2015-12-07 
+</li>
+<li>
+ $26.00 on 2016-10-29 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/357666">Greene, Elizabeth</a></dt>
+<dd></dd>
+<dd>grenne.liz@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/357667">Greene, Elizabeth</a></dt>
+<dd>(907) 748-7734(c), (907) 748-7734(h), 9077487734(w)</dd>
+<dd>greene.liz@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/275267">Haynes, Brian  </a></dt>
+<dd>(919) 221-2245(c), (919) 221-2245(h), (919) 221-2245(w)</dd>
+<dd>suebriety@yahoo.com</dd>
+</dl>
+</td>
+<td></td>
+<td>41</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-09-26 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/306290">Haynes, Susan</a></dt>
+<dd></dd>
+<dd>schaynes6@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/420204">Holt, Beverly</a></dt>
+<dd></dd>
+<dd>akbholt@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>2015-302953</td>
+<td>
+<dl>
+<dt><a href="/national/users/107336">Irsik, Christopher R </a></dt>
+<dd>(907) 232-1035(c), (907) 746-0595(h), (907) 271-2913(w)</dd>
+<dd>irsikc@gmail.com</dd>
+</dl>
+</td>
+<td>07/30/2017</td>
+<td>43</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-01-25 
+</li>
+<li>
+ $26.00 on 2016-02-01 
+</li>
+<li>
+ $26.00 on 2016-08-02 
+</li>
+</td>
+</tr>
+<tr>
+<td>2015-902931</td>
+<td>
+<dl>
+<dt><a href="/national/users/160959">Irsik, Donna D </a></dt>
+<dd>(907) 841-2527(c), (907) 746-0595(h), (907) 746-0595(w)</dd>
+<dd>donnairsik@hotmail.com</dd>
+</dl>
+</td>
+<td>07/30/2017</td>
+<td>48</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2014-08-27 
+</li>
+<li>
+ $26.00 on 2016-09-15 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/420209">Kaiser, Breanna</a></dt>
+<dd></dd>
+<dd>mymothunder@gamil.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/395685">Lee, Sharon</a></dt>
+<dd>(425) 420-6401(c)</dd>
+<dd>sspo@hotmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>2016-983726</td>
+<td>
+<dl>
+<dt><a href="/national/users/420211">Lee, Yi-Lin  </a></dt>
+<dd>(425) 420-6400(c), (425) 420-6400(h), (206) 271-6809(w)</dd>
+<dd>yilinlee@hotmail.com</dd>
+</dl>
+</td>
+<td>10/04/2017</td>
+<td>43</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2016-10-03 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/235228">Lewis, Jeff</a></dt>
+<dd></dd>
+<dd>lewis.js81@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>2015-439366</td>
+<td>
+<dl>
+<dt><a href="/national/users/312996">Magee, Ryan P </a></dt>
+<dd>(907) 398-9424(c), (907) 373-9276(h), (907) 398-9424(w)</dd>
+<dd>rmagee4570@gmail.com</dd>
+</dl>
+</td>
+<td>12/28/2017</td>
+<td>40</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2015-10-10 
+</li>
+<li>
+ $26.00 on 2016-11-28 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/261152">Magee, Trish</a></dt>
+<dd>(907) 373-9276(h)</dd>
+<dd>aktmagee@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2016-08-02 
+</li>
+<li>
+ $26.00 on 2016-08-02 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/276919">McKinnie, Jennifer</a></dt>
+<dd>(808) 375-5305(h)</dd>
+<dd>scottjen_mckinny@hotmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2016-08-31 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/437697">McKinnie, Scott</a></dt>
+<dd></dd>
+<dd>scott97binkuwait@hotmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>TLUSA-642689</td>
+<td>
+<dl>
+<dt><a href="/national/users/97099">Patteson, Curtis  </a></dt>
+<dd>(907) 306-9166(c), (907) 743-0649(h), (907) 306-9166(w)</dd>
+<dd>curtispatteson@msn.com</dd>
+</dl>
+</td>
+<td>01/29/2017</td>
+<td>45</td>
+<td>Hawk</td>
+<td>
+<li>
+ $26.00 on 2014-01-16 
+</li>
+<li>
+ $26.00 on 2015-01-06 
+</li>
+<li>
+ $26.00 on 2015-01-06 
+</li>
+<li>
+ $26.00 on 2015-01-06 
+</li>
+<li>
+ $26.00 on 2015-12-15 
+</li>
+<li>
+ $26.00 on 2016-01-17 
+</li>
+<li>
+ $26.00 on 2016-01-17 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/198131">Pettit, Dan  </a></dt>
+<dd></dd>
+<dd>pettitdk@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>2015-219631</td>
+<td>
+<dl>
+<dt><a href="/national/users/192012">Pettit, Glen A </a></dt>
+<dd>(907) 360-4829(c), (907) 688-0876(h), (907) 271-5260(w)</dd>
+<dd>pettit.glen@gmail.com</dd>
+</dl>
+</td>
+<td>01/06/2017</td>
+<td>41</td>
+<td>Leadership / Board</td>
+<td>
+<li>
+ $26.00 on 2014-10-13 
+</li>
+<li>
+ $26.00 on 2015-11-24 
+</li>
+<li>
+ $26.00 on 2015-11-24 
+</li>
+<li>
+ $26.00 on 2016-01-16 
+</li>
+<li>
+ $26.00 on 2016-08-30 
+</li>
+<li>
+ $26.00 on 2016-08-30 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-844154</td>
+<td>
+<dl>
+<dt><a href="/national/users/97109">Phillips, Jon C </a></dt>
+<dd>(254) 415-2460(c), (254) 319-6242(h), (254) 415-2460(w)</dd>
+<dd>grunspinner@yahoo.com</dd>
+</dl>
+</td>
+<td>03/07/2017</td>
+<td>38</td>
+<td>Mountain Lion</td>
+<td>
+<li>
+ $26.00 on 2014-02-10 
+</li>
+<li>
+ $26.00 on 2015-02-23 
+</li>
+<li>
+ $26.00 on 2015-02-23 
+</li>
+<li>
+ $26.00 on 2016-01-08 
+</li>
+<li>
+ $26.00 on 2016-02-08 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/275237">Pickens, Stacy</a></dt>
+<dd>(907) 350-9266(c), (907) 622-3300(h), (907) 696-5229(w)</dd>
+<dd>akpickens3@hotmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/160953">Rose, Teri</a></dt>
+<dd>(907) 250-4174(c), (907) 694-7580(h)</dd>
+<dd>miraclesbeliever2015@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-09-09 
+</li>
+<li>
+ $26.00 on 2016-09-29 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-581672</td>
+<td>
+<dl>
+<dt><a href="/national/users/88787">Saffle, Michael P </a></dt>
+<dd>(907) 634-4058(c), (907) 677-0351(h), (907) 742-0100(w)</dd>
+<dd>servantofmessiah1@gmail.com</dd>
+</dl>
+</td>
+<td>01/01/2016</td>
+<td>52</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2013-12-05 
+</li>
+<li>
+ $26.00 on 2015-08-28 
+</li>
+<li>
+ $26.00 on 2015-12-21 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/178886">Schmitt, Erich</a></dt>
+<dd></dd>
+<dd>taraherich@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>2016-971628</td>
+<td>
+<dl>
+<dt><a href="/national/users/420207">Severns, Andrew R </a></dt>
+<dd>(541) 805-9196(c), (541) 510-9358(h), (907) 580-2804(w)</dd>
+<dd>severnsa@gmail.com</dd>
+</dl>
+</td>
+<td>09/27/2017</td>
+<td>44</td>
+<td>Fox</td>
+<td>
+<li>
+ $26.00 on 2016-09-21 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/113638">Sladko, Jeffrey J </a></dt>
+<dd>(907) 382-9696(c), (907) 726-1316(h), (310) 342-8757(w)</dd>
+<dd>arcticaviator@gci.net</dd>
+</dl>
+</td>
+<td></td>
+<td>51</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2015-10-06 
+</li>
+<li>
+ $26.00 on 2016-02-29 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/318927">Spiller, Yvonne</a></dt>
+<dd>(706) 306-6377(h)</dd>
+<dd>spillerfamily2@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2016-11-17 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-023232</td>
+<td>
+<dl>
+<dt><a href="/national/users/88786">Story, Dana  </a></dt>
+<dd>(910) 987-7907(c), (910) 987-7907(h), (910) 987-7907(w)</dd>
+<dd>ewdys95@yahoo.com</dd>
+</dl>
+</td>
+<td>01/15/2017</td>
+<td>43</td>
+<td>Leadership / Board</td>
+<td>
+<li>
+ $26.00 on 2013-12-03 
+</li>
+<li>
+ $210.00 on 2014-10-27 
+</li>
+<li>
+ $875.00 on 2014-10-30 
+</li>
+<li>
+ $26.00 on 2015-01-15 
+</li>
+<li>
+ $740.00 on 2015-07-13 
+</li>
+<li>
+ $26.00 on 2016-01-11 
+</li>
+<li>
+ $440.00 on 2016-04-04 
+</li>
+<li>
+ $660.00 on 2016-08-01 
+</li>
+<li>
+ $26.00 on 2016-08-16 
+</li>
+</td>
+</tr>
+<tr>
+<td>TLUSA-287273</td>
+<td>
+<dl>
+<dt><a href="/national/users/97101">Story, Eric W </a></dt>
+<dd>(910) 987-7912(c), (910) 987-7912(h), (907) 384-8184(w)</dd>
+<dd>eric739598@gmail.com</dd>
+</dl>
+</td>
+<td>02/01/2017</td>
+<td>43</td>
+<td>Leadership / Board</td>
+<td>
+<li>
+ $26.00 on 2014-01-16 
+</li>
+<li>
+ $26.00 on 2015-02-01 
+</li>
+<li>
+ $26.00 on 2015-02-01 
+</li>
+<li>
+ $26.00 on 2015-02-01 
+</li>
+<li>
+ $827.00 on 2015-05-07 
+</li>
+<li>
+ $26.00 on 2016-02-15 
+</li>
+<li>
+ $26.00 on 2016-02-15 
+</li>
+<li>
+ $26.00 on 2016-02-15 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/373234">Velvick, Aaron</a></dt>
+<dd></dd>
+<dd>aaron.velvick@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/275270">Webster, Keith  </a></dt>
+<dd>(907) 229-6321(c), (907) 694-1919(h), (907) 265-2636(w)</dd>
+<dd>keith_lily_Webster@yahoo.com</dd>
+</dl>
+</td>
+<td></td>
+<td>50</td>
+<td></td>
+<td>
+<li>
+ $26.00 on 2016-07-26 
+</li>
+<li>
+ $26.00 on 2016-07-26 
+</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/322075">Webster, Keith</a></dt>
+<dd></dd>
+<dd>frost-wulf@hotmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td>Fox</td>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<dl>
+<dt><a href="/national/users/439448">Williams, Kathy</a></dt>
+<dd>(907) 863-1179(c), (907) 688-5399(h), (907) 770-0862(w)</dd>
+<dd>kathydotk44@gmail.com</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div class='tab-pane' id='notes'>
+<div class='btn-group'>
+<a class="btn" data-remote="true" href="/national/troops/3299/new_note">Add Note</a>
+<a class="btn" data-remote="true" href="/national/troops/3299/new_attachment">Attach File</a>
+</div>
+<br>
+<br>
+<div id='add-here'></div>
+<div class='row'>
+<div class='span6'>
+<div id='all-notes'>
+<blockquote>
+<p>From: Paul Stubblefield [mailto:pstubblefield@traillifeusa.com] 
+<br />Sent: Tuesday, July 05, 2016 3:06 PM
+<br />To: 'ewdys95@yahoo.com' 
+<br />Cc: 'TrailLifeUSA.Alaska@gmail.com' ; 'travlnduffys@yahoo.com' ; 'curtispatteson@msn.com' 
+<br />Subject: Trail Life Troop AK-0226 Program Fee</p>
+
+<p>Mrs. Story,    </p>
+
+<p>I hope this day finds you well. Thank you so much for your partnership in ministry this past year in raising these boys to be godly young men! We are grateful to partner with you to “guide generations of courageous young men to honor God, lead with integrity, serve others, and experience outdoor adventure”.</p>
+
+<p>Your Troop’s Program fee of $660.00 is due 8/4/2016.   </p>
+
+<p>What is the Annual Troop Program Fee? 
+<br />1. The Annual Troop Program Fee provides for the budgetary needs of the national Trail Life USA organization, thereby making it possible for Troops to retain 100% of the profits from their fundraisers. We believe that the flat and simple Annual Troop Program Fee will allow Troops to be as creative and financially viable as they wish, while still providing for the needs of the Home Office. 
+<br />2. On its recharter date, the Annual Troop Program Fee of $20 for each Registered Youth Member is charged to the Troop, with payment due within six months. This program fee is waived in the Troop’s first year as they work to get their program established. 
+<br />3. The Annual Troop Program Fee maintains our fee structure parity with our sister organization, the American Heritage Girls, allowing both organizations to develop, maintain, and grow a strong and vibrant program for our youth that is primarily membership-funded and does not depend on major corporate donations to support our standard program offerings. 
+<br />4. The Program Fee billing system accounts for the fact that the number of members fluctuate throughout the year. Our registration system is somewhat unique in that members can join any time of year and the term of membership is for one full year, no matter when members join. Members may leave, and others will join to replace them. The re-charter date of each Troop is the time pinpointed to assess the program fees.</p>
+
+<p>The Fee has been assessed to your Troop Track account since you are currently listed as the Treasurer.</p>
+
+<p>To pay this fee, simply log into Troop Track, click on the drop down box by your name at the top of the page, click on National fees, click on the details button beside the listed fee.</p>
+
+<p>Thank you for your attention to this matter. Payment of this fee by the due date will allow for a seamless transition in TroopTrack, and not losing any access.</p>
+
+<p>Please let me know if you need any assistance or have any questions.  I am here to help.</p>
+
+<p>Walk Worthy,
+<br />Paul</p>
+<small>
+<strong>Paul Stubblefield</strong>
+2016-07-05 02:06 pm
+</small>
+</blockquote>
+<blockquote>
+<p>From: Paul Stubblefield [mailto:pstubblefield@traillifeusa.com] 
+<br />Sent: Monday, July 25, 2016 1:30 PM
+<br />To: 'ewdys95@yahoo.com' 
+<br />Cc: 'TrailLifeUSA.Alaska@gmail.com' ; 'travlnduffys@yahoo.com' ; 'curtispatteson@msn.com' 
+<br />Subject: Trail Life Troop AK-0226 Program Fee</p>
+
+<p>Mrs. Story,</p>
+
+<p>I hope this day finds you well. Thank you so much for your partnership in ministry this past year in raising these boys to be godly young men! We are grateful to partner with you to “guide generations of courageous young men to honor God, lead with integrity, serve others, and experience outdoor adventure”.</p>
+
+<p>Your Troop’s Program fee of $660.00 is due 8/4/2016.</p>
+
+<p>What is the Annual Troop Program Fee? 
+<br />1. The Annual Troop Program Fee provides for the budgetary needs of the national Trail Life USA organization, thereby making it possible for Troops to retain 100% of the profits from their fundraisers. We believe that the flat and simple Annual Troop Program Fee will allow Troops to be as creative and financially viable as they wish, while still providing for the needs of the Home Office. 
+<br />2. On its recharter date, the Annual Troop Program Fee of $20 for each Registered Youth Member is charged to the Troop, with payment due within six months. This program fee is waived in the Troop’s first year as they work to get their program established. 
+<br />3. The Annual Troop Program Fee maintains our fee structure parity with our sister organization, the American Heritage Girls, allowing both organizations to develop, maintain, and grow a strong and vibrant program for our youth that is primarily membership-funded and does not depend on major corporate donations to support our standard program offerings. 
+<br />4. The Program Fee billing system accounts for the fact that the number of members fluctuate throughout the year. Our registration system is somewhat unique in that members can join any time of year and the term of membership is for one full year, no matter when members join. Members may leave, and others will join to replace them. The re-charter date of each Troop is the time pinpointed to assess the program fees.</p>
+
+<p>The Fee has been assessed to your Troop Track account since you are currently listed as the Treasurer.</p>
+
+<p>To pay this fee, simply log into Troop Track, click on the drop down box by your name at the top of the page, click on National fees, click on the details button beside the listed fee.</p>
+
+<p>Thank you for your attention to this matter. Payment of this fee by the due date will allow for a seamless transition in TroopTrack, and not lose any access.</p>
+
+<p>Please let me know if you need any assistance or have any questions. I am here to help.</p>
+
+<p>Walk Worthy, </p>
+
+<p> 
+<br />PAUL STUBBLEFIELD  Troop Engagement Coordinator, Trail Life USA
+<br />P: (321) 247-7761 | F: (321) 247-7762 | PStubblefield@TrailLifeUSA.com</p>
+
+<p>www.TrailLifeUSA.com | 10612 Augusta Road, Belton, SC 29627</p>
+<small>
+<strong>Paul Stubblefield</strong>
+2016-07-25 12:30 pm
+</small>
+</blockquote>
+<blockquote>
+<p>From: JOHN BROOKS [mailto:johnbrook19@mtaonline.net] 
+<br />Sent: Thursday, December 01, 2016 4:52 PM
+<br />To: Carolyn Culbertson
+<br />Subject: Moriah Fellowship status</p>
+
+<p>Carolyn,</p>
+
+<p>The current status of Moriah Fellowship is this...</p>
+
+<p>Moriah Fellowship is now the youth ministry for Sabbath Peace Fellowship.  It is still an official entity, so it's not just a shell game.  I am the listed Head Pastor of Moriah Fellowship.  For Sabbath Peace Fellowship, I am the youth pastor.  I hope that makes it as clear as mud.</p>
+
+<p>God bless you.</p>
+
+<p>Danny</p>
+<small>
+<strong>Carolyn Culbertson</strong>
+2016-12-02 01:02 pm
+</small>
+</blockquote>
+
+</div>
+</div>
+<div class='span6'>
+<strong>Documents</strong>
+<ul>
+</ul>
+</div>
+</div>
+
+</div>
+<div class='tab-pane' id='pm-notes'>
+<a class="btn" data-remote="true" href="/point_man_tools/pm_notes/3299/new_note">Add PM Note</a>
+<br>
+<br>
+<div id='add-here'></div>
+<div id='all-notes'>
+
+</div>
+
+</div>
+<div class='tab-pane' id='precharter'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Precharter Info</th>
+<th>Pre-chartered by</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr id='precharter_info_399'>
+<td>
+<dl>
+<dt><a href="/national/troops/3299">AK-0226</a></dt>
+<dd>Paid on 2013-11-12</dd>
+<dd>Former BSA Troop? No</dd>
+<dd>Expecting 20 Youth</dd>
+<dt>Status</dt>
+<dd>Approved to Charter: Yes</dd>
+<dd>Charter Status: chartered</dd>
+</dl>
+</td>
+<td>
+<dl>
+<dt><a href="/national/users/80838">Danny Brooks</a></dt>
+<dd>(678) 491-0780(c), (907) 622-5727(h), (907) 269-7888(w)</dd>
+<dd>TrailLifeUSA.Alaska@gmail.com</dd>
+</dl>
+</td>
+<td>
+<dl>
+<dt></dt>
+<dd>Chugiak</dd>
+<dd>AK</dd>
+<dd>99567</dd>
+<dd>Latitude 61.4098</dd>
+<dd>Longitude: -149.454</dd>
+</dl>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div class='tab-pane' id='charters'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Effective On</th>
+<th>Expires On</th>
+<th>Renewal Quarter</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr class="charter" id="charter_17"><td>2014-01-15</td>
+<td>2017-01-15</td>
+<td><a data-remote="true" href="/national/charters/17/edit">Edit</a></td>
+</tr></tbody>
+</table>
+</div>
+<div class='tab-pane' id='org_info'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Charter Organization Name</th>
+<th>Phone Number</th>
+<th>Denomination</th>
+<th>Web Site</th>
+<th>Organization Type</th>
+<th>Other Organization Type</th>
+<th>Legal Entity Type</th>
+<th>Address Line 1</th>
+<th>Address Line 2</th>
+<th>City</th>
+<th>State</th>
+<th>Zip Code</th>
+<th></th>
+</tr>
+</thead>
+<tbody><div class='btn-group'>
+<a class="btn" href="/national/charter_organizations/17/edit">Edit</a>
+</div>
+<tr class="charter" id="charter_17"><td>Moriah Fellowship</td>
+<td>(907) 231-4567</td>
+<td>Baptist - Southern</td>
+<td></td>
+<td>Church</td>
+<td></td>
+<td>LLC</td>
+<td>15938 Division St.</td>
+<td></td>
+<td>Chugiak</td>
+<td>AK</td>
+<td>99567</td>
+</tr></tbody>
+</table>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class='navbar navbar-fixed-bottom'>
+<div class='centered'>
+&copy; TroopTrack 2012
+</div>
+</div>
+<!--
+Javascripts
+==================================================
+-->
+<!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>

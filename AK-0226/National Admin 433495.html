@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>National Admin</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="tbTpvtt2YmJUsXSnjbZBRPQKhMfuVhh4H1IzPkuojkgyerw/0uXVY/1hHLHX4URzpxWC95GQ8+AHuFCeoX+iOQ==" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+<![endif]-->
+<script src="https://d3thk2na9w8m59.cloudfront.net/assets/ahg-5f9af18e67c5537ee3efa3df89b603fd.js" data-turbolinks-track="true"></script>
+<link rel="stylesheet" media="all" href="https://d3thk2na9w8m59.cloudfront.net/assets/ahg-admin-b9c62e42386478b4ba74c30095a5d01e.css" data-turbolinks-track="true" />
+</head>
+<body id='ahg-admin'>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container-fluid'>
+<a class="brand" href="/national">Trail Life USA</a>
+<div class='container'>
+<ul class='nav hidden-desktop'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class='fa fa-bars'></i>
+</a><ul class='dropdown-menu' role='menu'>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Settings</a>
+<ul class='dropdown-menu'>
+<li><a href="/national/charter_documents">Charter Documents</a></li>
+<li><a href="/national/leadership_position_types">Leadership Positions</a></li>
+<li><a href="/national/unit_type">National Settings</a></li>
+<li><a href="/national/regions">Regions</a></li>
+<li><a href="/national/award_types">Award Types</a></li>
+<li><a href="/national/purchaseable_items">Purchaseable Items</a></li>
+<li><a href="/national/help_pages">User Guide</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Membership</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops">Troops</a></li>
+<li><a href="/national/troop_leader_contact_changes">Troop Contact Changes</a></li>
+<li><a href="/national/users">Members</a></li>
+<li><a href="/national/troop_transfer/new">Transfer Members</a></li>
+<li><a href="/national/point_men_report">Point Men</a></li>
+<li><a href="/national/rants">RANTs</a></li>
+<li><a href="/national/background_checks">Pending CBC</a></li>
+<li><a href="/national/renewals">Pending Membership Renewals</a></li>
+<li><a href="/national/troops/summary">Summary</a></li>
+<li><a href="/national/membership_applications/trigger_training_report">Send Training Report</a></li>
+<li><a href="/national/membership_cards">Membership ID Cards</a></li>
+<li><a href="/national/troops_with_ahg">Troops With AHG Troops</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Review</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops/incomplete">Incomplete Precharters</a></li>
+<li><a href="/national/precharter_infos">Precharters</a></li>
+<li><a href="/national/cbc_needed_report">New Members - CBC Needed</a></li>
+<li><a href="/national/pending_members_report">New Members - Pending Approval</a></li>
+<li><a href="/national/pending_regional_members_report">New Regional Members - Pending Approval</a></li>
+<li><a href="/national/charters">Charters</a></li>
+<li><a href="/national/charter_renewals">Charter Renewals</a></li>
+<li><a href="/national/membership_applications">Membership Applications</a></li>
+<li>
+<a href="/national/merge_users">Merge Users
+<span class='badge badge-info'>
+New
+</span>
+</a></li>
+<li><a href="/national/duplicates_groups">Duplicate Users</a></li>
+<li><a href="/national/expired_users">Expired Users</a></li>
+<li><a href="/national/orders">Orders</a></li>
+<li><a href="/national/order_line_items">Items Sold</a></li>
+<li><a href="/national/inventory_summary">Inventory Summary</a></li>
+<li><a href="/national/fees">Fees</a></li>
+<li><a href="/national/badge_book">Badge Book</a></li>
+<li><a href="/national/opted_for_emails">Opted For Partner Emails</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Content</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troop_documents">Troop Documents</a></li>
+<li><a href="/national/leader_pages">Leader Pages</a></li>
+<li><a href="/national/point_man_pages">Point Man Pages</a></li>
+<li><a href="/national/messages">Messages</a></li>
+</ul>
+
+</li>
+
+</ul>
+</li>
+</ul>
+<ul class='nav visible-desktop'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Settings<b class="caret"></b></span></a>
+<ul class='dropdown-menu'>
+<li><a href="/national/charter_documents">Charter Documents</a></li>
+<li><a href="/national/leadership_position_types">Leadership Positions</a></li>
+<li><a href="/national/unit_type">National Settings</a></li>
+<li><a href="/national/regions">Regions</a></li>
+<li><a href="/national/award_types">Award Types</a></li>
+<li><a href="/national/purchaseable_items">Purchaseable Items</a></li>
+<li><a href="/national/help_pages">User Guide</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Membership<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops">Troops</a></li>
+<li><a href="/national/troop_leader_contact_changes">Troop Contact Changes</a></li>
+<li><a href="/national/users">Members</a></li>
+<li><a href="/national/troop_transfer/new">Transfer Members</a></li>
+<li><a href="/national/point_men_report">Point Men</a></li>
+<li><a href="/national/rants">RANTs</a></li>
+<li><a href="/national/background_checks">Pending CBC</a></li>
+<li><a href="/national/renewals">Pending Membership Renewals</a></li>
+<li><a href="/national/troops/summary">Summary</a></li>
+<li><a href="/national/membership_applications/trigger_training_report">Send Training Report</a></li>
+<li><a href="/national/membership_cards">Membership ID Cards</a></li>
+<li><a href="/national/troops_with_ahg">Troops With AHG Troops</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Review<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops/incomplete">Incomplete Precharters</a></li>
+<li><a href="/national/precharter_infos">Precharters</a></li>
+<li><a href="/national/cbc_needed_report">New Members - CBC Needed</a></li>
+<li><a href="/national/pending_members_report">New Members - Pending Approval</a></li>
+<li><a href="/national/pending_regional_members_report">New Regional Members - Pending Approval</a></li>
+<li><a href="/national/charters">Charters</a></li>
+<li><a href="/national/charter_renewals">Charter Renewals</a></li>
+<li><a href="/national/membership_applications">Membership Applications</a></li>
+<li>
+<a href="/national/merge_users">Merge Users
+<span class='badge badge-info'>
+New
+</span>
+</a></li>
+<li><a href="/national/duplicates_groups">Duplicate Users</a></li>
+<li><a href="/national/expired_users">Expired Users</a></li>
+<li><a href="/national/orders">Orders</a></li>
+<li><a href="/national/order_line_items">Items Sold</a></li>
+<li><a href="/national/inventory_summary">Inventory Summary</a></li>
+<li><a href="/national/fees">Fees</a></li>
+<li><a href="/national/badge_book">Badge Book</a></li>
+<li><a href="/national/opted_for_emails">Opted For Partner Emails</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Content<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troop_documents">Troop Documents</a></li>
+<li><a href="/national/leader_pages">Leader Pages</a></li>
+<li><a href="/national/point_man_pages">Point Man Pages</a></li>
+<li><a href="/national/messages">Messages</a></li>
+</ul>
+
+</li>
+
+</ul>
+<ul class='nav pull-right'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>hinman@traillifeusa.com<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a rel="nofollow" data-method="delete" href="/national_admins/sign_out">Log Out</a></li>
+</ul>
+</li>
+</ul>
+<div class='navbar-form pull-right small'>
+<form action="/national/troops" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="number" id="number" class="search-query" placeholder="Troops" />
+</form>
+
+</div>
+<div class='navbar-form pull-right small'>
+<form action="/national/users" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="last_name" id="last_name" class="search-query" placeholder="Members" />
+<input type="hidden" name="membership_status" id="membership_status" />
+<input type="hidden" name="position_id" id="position_id" />
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='span12'>
+<div class='modal hide fade' id='the_modal'></div>
+<div class='modal hide fade' id='the_wide_modal'></div>
+
+
+<h2>
+Severns, Andrew J
+<small>
+<a href="/national/troops/3299">Troop AK-0226</a>
+</small>
+</h2>
+<h4>
+Approved
+</h4>
+<ul class='nav nav-tabs'>
+<li class='active'><a data-toggle="tab" href="#contact">Contact Info</a></li>
+<li><a data-toggle="tab" href="#positions">Positions</a></li>
+<li><a data-toggle="tab" href="#training">Training</a></li>
+<li><a data-toggle="tab" href="#privileges">Privileges</a></li>
+<li><a data-toggle="tab" href="#fees">Fees &amp; Payments</a></li>
+<li><a href="#advancement">Advancement</a></li>
+<li><a href="#service">Service</a></li>
+<li><a data-toggle="tab" href="#renewals">Renewal History</a></li>
+<li><a data-toggle="tab" href="#documents">Signed Documents</a></li>
+<li><a data-toggle="tab" href="#id_cards">ID Cards</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active' id='contact'>
+<div class='btn-group'>
+<a class="btn" href="/national/users/433495/edit">Edit Contact Info</a>
+<a class="btn" href="/national/membership_applications/46342">Membership Application</a>
+<a class="btn" href="/national/no_emails/433495">No Emails</a>
+<a class="btn" target="_blank" href="/national/users/433495/impersonate">Impersonate</a>
+<a class="btn" data-method="put" data-confirm="Are you sure you want to end all troop leadership positions and disassociate AJ Severns from AK-0226?" href="/national/users/433495/troop_removal">Remove From Troop AK-0226</a>
+<a class="btn" data-method="put" data-confirm="Are you sure?" data-disable-with="Please wait..." href="/national/users/433495/inactivate">Make Inactive</a>
+</div>
+<div class='clearfix'></div>
+<br>
+<dl>
+<dt>Severns, Andrew J</dt>
+<dd>"AJ"</dd>
+<dd>
+
+</dd>
+<dd></dd>
+<dd>7486 Seville Ave , #1720, Jber, AK, 99506</dd>
+<dt>Member Number</dt>
+<dd>2016-110120</dd>
+<dt>Member Since</dt>
+<dd>2016-09-28</dd>
+<dt>Expires On</dt>
+<dd>2017-09-28</dd>
+</dl>
+</div>
+<div class='tab-pane' id='documents'>
+<div class='alert'>
+<h1><strong>CONSENT, WAIVER AND RELEASE AGREEMENT</strong></h1>
+
+<p>All members agree to adhere and subscribe to and comply with the Trail Life USA Oath, Membership Standards,&nbsp;and Trail Life USA national policies and guidelines.&nbsp; <strong>Adult members also agree with and will adhere to and comply with the <a href="http://www.traillifeusa.com/whoweare/" target="_blank">Trail Life USA Statement of Faith and Statement of Values</a>.</strong></p>
+
+<p>The parents of youth members have read the Statement of Faith and Statement of Values and understand, accept and agree that the Trail Life USA program and activities will be conducted consistent with those Statements which will include Christian teaching and biblically-based morality.</p>
+
+<p><strong>Release: </strong>In consideration of the benefits of participation in Trail Life USA and/or its related activities, the undersigned, on behalf of my minor child(ren) and myself, including all heirs, personal representatives or assigns of my child(ren) and/or myself, consent to my child(ren)&rsquo;s participation in Trail Life USA and/or its related activities and further waive all claims or causes of action against Trail Life USA (a Florida non-profit corporation), the Charter Organization, and their respective agents, directors, trustees, employees, volunteers and heirs and successors thereof (hereinafter collectively referred to as the &ldquo;Releasees&rdquo;) arising out of my minor child(ren)&rsquo;s and/or my participation in Trail Life USA and its related activities and hereby release, hold harmless and discharge the Releasees from any and all liability, claims, demands, actions and causes of action whatsoever, including attorney fees, arising out of or related to any loss, damage or injury (whether direct, indirect, consequential or otherwise), including death, that my minor child(ren) and/or I might sustain or that any of my minor child(ren)&rsquo;s and/or my property might sustain while participating in Trail Life USA and/or its related activities.</p>
+
+<p><strong>Assumption of Risks: </strong>Knowing, understanding, and fully appreciating all possible risks, I hereby expressly, voluntarily and willingly assume all risks and dangers associated with my minor child(ren)&rsquo;s and/or my participation in Trail Life USA and/or any related activities. I understand and acknowledge that participation in Trail Life USA and/or its related activities could result in injury and I agree that participation in any such activities shall be at my minor child(ren)&rsquo;s and/or my sole risk.</p>
+
+<p><strong>Acknowledgment of Understanding: </strong>I have read this Consent, Waiver and Release Agreement and understand the terms used in it and their legal significance. This Consent, Waiver and Release Agreement is freely and voluntarily given with the understanding that right to legal recourse against the Releasees is knowingly given up in return for allowing my minor child(ren)&rsquo;s and/or my participation in Trail Life USA and/or any such activities. I agree that this Consent, Waiver, and Release Agreement shall remain in effect and apply each time my minor child and/or I participate in Trail Life USA and/or any related activities.</p>
+
+<p>The agreement to be bound by Trail Life USA rules and requirement and policies is a condition precedent to Trail Life USA approving registration and granting membership. Through signing and affirming: &ldquo;<strong>I have read and agree to follow and adhere to the <a href="https://s3.amazonaws.com/trooptrack-prod/documents/4953/original/Child_Safety__Youth_Protection_Policies_1-14_formatted_(2).pdf" target="_blank">Trail Life USA Child Safety Youth Protection Policy</a>, including all reporting responsibilities thereunder&rdquo;,</strong>&nbsp;you are agreeing that if membership is granted you will do so.</p>
+
+<p><strong>Trail Life USA Child Safety Youth Protection Policy: I have read and agree to follow and adhere to the <a href="https://s3.amazonaws.com/trooptrack-prod/documents/4953/original/Child_Safety__Youth_Protection_Policies_1-14_formatted_(2).pdf" target="_blank">Trail Life USA Child Safety Youth Protection Policy</a>, including all reporting responsibilities thereunder.</strong></p>
+
+<p><span style="background-color:rgb(255, 255, 255); color:rgb(68, 68, 68); font-family:arial,sans-serif; font-size:13px"><strong>Pennsylvania Residents Only:</strong> By submitting this application and other required membership documents, I hereby swear and affirm in that I m not disqualified from service based upon a conviction of an offense under Pennsylvania &sect;6344.</span></p>
+
+<p><strong><em>Photograph, Film or Vocal Recording Media Release</em></strong></p>
+
+<p><strong>I authorize this release based on the following conditions:</strong></p>
+
+<p><strong>1.&nbsp;</strong><strong>This consent and release remains in effect for the duration of membership in Trail Life USA&nbsp;</strong></p>
+
+<p><strong>2.&nbsp;</strong><strong>These records become the property of Trail Life USA and/or the Charter Organization&nbsp;</strong></p>
+
+<p><strong>3. This release is given without promise of compensation</strong></p>
+
+<p><strong>4. This is effective until terminated by a retraction in writing from the person granting the authorization</strong></p>
+
+<p><strong>5. The parent/legal guardian and Trail Life USA member do release to Trail Life USA any right, title and/or interest of any kind they may have in the records produced.</strong></p>
+
+<p><strong>I hereby grant to Trail Life USA and the Charter Organization the right and authority to photograph, film and/or record vocally participation in Trail Life USA and/or any related activities. These records may be used for promotional or publicity purposes and may be published in mass media publications, in Trail Life USA newsletters and other Trail Life USA publications, on Trail Life USA&rsquo;s internet site, or shown on television or movie presentations. Member and family&rsquo;s names may not be used without specific member/parental permission. This release is in effect until revoked in writing by the undersigned. Such revocation shall only be effective to prevent any expanded future use of the records.</strong></p>
+
+<p>By signature below, I acknowledge and accept all terms and conditions of this Consent, Waiver, and Release Agreement. If I am signing this Consent, Waiver, and Release Agreement on behalf of a minor, I certify that all representations are true and that I am the minor&rsquo;s legal guardian or custodial parent with full authority to bind the minor and myself to the terms and conditions of this Consent, Waiver and Release Agreement.</p>
+
+<dl class='dl-horizontal'>
+<dt>Severns, Andrew J</dt>
+<dd>Andrew Severns</dd>
+<dt>Signed On</dt>
+<dd>09/27/16</dd>
+</dl>
+
+<br>
+<br>
+</div>
+
+</div>
+<div class='tab-pane' id='positions'>
+<a class="btn" data-remote="true" href="/national/users/433495/leadership_positions/new"><i class="fa fa-plus"></i>
+</a><table class='table table-striped'>
+<thead>
+<tr>
+<th>Position</th>
+<th>Started</th>
+<th>Ended</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+</div>
+<div class='tab-pane' id='training'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Training</th>
+<th>Completed on</th>
+<th>Goal on</th>
+<th>Status / Certificate</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+<div class='tab-pane' id='privileges'>
+<a class="btn" data-remote="true" href="/national/users/433495/edit">Edit</a>
+<dt>Access Level</dt>
+<dd>None</dd>
+<dt>Privileges</dt>
+</div>
+<div class='tab-pane' id='fees'>
+<a class="btn" href="/national/users/433495/fees/new">Create a Fee</a>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Created At</th>
+<th>Created By</th>
+<th>Fee Type</th>
+<th>Message</th>
+<th>Amount</th>
+<th>Due On</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+</div>
+<div class='tab-pane' id='advancement'>
+<h3>Advancement</h3>
+</div>
+<div class='tab-pane' id='service'>
+<h3>Service</h3>
+</div>
+<div class='tab-pane' id='renewals'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Signed</th>
+<th>Purchased</th>
+<th>FS</th>
+<th>Certified</th>
+<th>Certified By</th>
+<th>Approved On</th>
+<th>Approved By</th>
+<th>Application</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+<div class='tab-pane' id='id_cards'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Signed</th>
+<th>Purchased</th>
+<th>FS</th>
+<th>Certified</th>
+<th>Certified By</th>
+<th>Approved On</th>
+<th>Approved By</th>
+<th>Application</th>
+<th></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='navbar navbar-fixed-bottom'>
+<div class='centered'>
+&copy; TroopTrack 2012
+</div>
+</div>
+<!--
+Javascripts
+==================================================
+-->
+<!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>

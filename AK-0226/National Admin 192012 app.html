@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>National Admin</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="0reBRjP/UDlRM1oBOyLxhvunFBcglkY2qZAuTTfw4AdVedTHOmznOPjjMhdhdfSxqLgSJ19Qra6xek3t3SfMdg==" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+<![endif]-->
+<script src="https://d3thk2na9w8m59.cloudfront.net/assets/ahg-5f9af18e67c5537ee3efa3df89b603fd.js" data-turbolinks-track="true"></script>
+<link rel="stylesheet" media="all" href="https://d3thk2na9w8m59.cloudfront.net/assets/ahg-admin-b9c62e42386478b4ba74c30095a5d01e.css" data-turbolinks-track="true" />
+</head>
+<body id='ahg-admin'>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container-fluid'>
+<a class="brand" href="/national">Trail Life USA</a>
+<div class='container'>
+<ul class='nav hidden-desktop'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class='fa fa-bars'></i>
+</a><ul class='dropdown-menu' role='menu'>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Settings</a>
+<ul class='dropdown-menu'>
+<li><a href="/national/charter_documents">Charter Documents</a></li>
+<li><a href="/national/leadership_position_types">Leadership Positions</a></li>
+<li><a href="/national/unit_type">National Settings</a></li>
+<li><a href="/national/regions">Regions</a></li>
+<li><a href="/national/award_types">Award Types</a></li>
+<li><a href="/national/purchaseable_items">Purchaseable Items</a></li>
+<li><a href="/national/help_pages">User Guide</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Membership</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops">Troops</a></li>
+<li><a href="/national/troop_leader_contact_changes">Troop Contact Changes</a></li>
+<li><a href="/national/users">Members</a></li>
+<li><a href="/national/troop_transfer/new">Transfer Members</a></li>
+<li><a href="/national/point_men_report">Point Men</a></li>
+<li><a href="/national/rants">RANTs</a></li>
+<li><a href="/national/background_checks">Pending CBC</a></li>
+<li><a href="/national/renewals">Pending Membership Renewals</a></li>
+<li><a href="/national/troops/summary">Summary</a></li>
+<li><a href="/national/membership_applications/trigger_training_report">Send Training Report</a></li>
+<li><a href="/national/membership_cards">Membership ID Cards</a></li>
+<li><a href="/national/troops_with_ahg">Troops With AHG Troops</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Review</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops/incomplete">Incomplete Precharters</a></li>
+<li><a href="/national/precharter_infos">Precharters</a></li>
+<li><a href="/national/cbc_needed_report">New Members - CBC Needed</a></li>
+<li><a href="/national/pending_members_report">New Members - Pending Approval</a></li>
+<li><a href="/national/pending_regional_members_report">New Regional Members - Pending Approval</a></li>
+<li><a href="/national/charters">Charters</a></li>
+<li><a href="/national/charter_renewals">Charter Renewals</a></li>
+<li><a href="/national/membership_applications">Membership Applications</a></li>
+<li>
+<a href="/national/merge_users">Merge Users
+<span class='badge badge-info'>
+New
+</span>
+</a></li>
+<li><a href="/national/duplicates_groups">Duplicate Users</a></li>
+<li><a href="/national/expired_users">Expired Users</a></li>
+<li><a href="/national/orders">Orders</a></li>
+<li><a href="/national/order_line_items">Items Sold</a></li>
+<li><a href="/national/inventory_summary">Inventory Summary</a></li>
+<li><a href="/national/fees">Fees</a></li>
+<li><a href="/national/badge_book">Badge Book</a></li>
+<li><a href="/national/opted_for_emails">Opted For Partner Emails</a></li>
+</ul>
+
+</li>
+<li class='dropdown-submenu'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#">Content</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troop_documents">Troop Documents</a></li>
+<li><a href="/national/leader_pages">Leader Pages</a></li>
+<li><a href="/national/point_man_pages">Point Man Pages</a></li>
+<li><a href="/national/messages">Messages</a></li>
+</ul>
+
+</li>
+
+</ul>
+</li>
+</ul>
+<ul class='nav visible-desktop'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Settings<b class="caret"></b></span></a>
+<ul class='dropdown-menu'>
+<li><a href="/national/charter_documents">Charter Documents</a></li>
+<li><a href="/national/leadership_position_types">Leadership Positions</a></li>
+<li><a href="/national/unit_type">National Settings</a></li>
+<li><a href="/national/regions">Regions</a></li>
+<li><a href="/national/award_types">Award Types</a></li>
+<li><a href="/national/purchaseable_items">Purchaseable Items</a></li>
+<li><a href="/national/help_pages">User Guide</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Membership<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops">Troops</a></li>
+<li><a href="/national/troop_leader_contact_changes">Troop Contact Changes</a></li>
+<li><a href="/national/users">Members</a></li>
+<li><a href="/national/troop_transfer/new">Transfer Members</a></li>
+<li><a href="/national/point_men_report">Point Men</a></li>
+<li><a href="/national/rants">RANTs</a></li>
+<li><a href="/national/background_checks">Pending CBC</a></li>
+<li><a href="/national/renewals">Pending Membership Renewals</a></li>
+<li><a href="/national/troops/summary">Summary</a></li>
+<li><a href="/national/membership_applications/trigger_training_report">Send Training Report</a></li>
+<li><a href="/national/membership_cards">Membership ID Cards</a></li>
+<li><a href="/national/troops_with_ahg">Troops With AHG Troops</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Review<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troops/incomplete">Incomplete Precharters</a></li>
+<li><a href="/national/precharter_infos">Precharters</a></li>
+<li><a href="/national/cbc_needed_report">New Members - CBC Needed</a></li>
+<li><a href="/national/pending_members_report">New Members - Pending Approval</a></li>
+<li><a href="/national/pending_regional_members_report">New Regional Members - Pending Approval</a></li>
+<li><a href="/national/charters">Charters</a></li>
+<li><a href="/national/charter_renewals">Charter Renewals</a></li>
+<li><a href="/national/membership_applications">Membership Applications</a></li>
+<li>
+<a href="/national/merge_users">Merge Users
+<span class='badge badge-info'>
+New
+</span>
+</a></li>
+<li><a href="/national/duplicates_groups">Duplicate Users</a></li>
+<li><a href="/national/expired_users">Expired Users</a></li>
+<li><a href="/national/orders">Orders</a></li>
+<li><a href="/national/order_line_items">Items Sold</a></li>
+<li><a href="/national/inventory_summary">Inventory Summary</a></li>
+<li><a href="/national/fees">Fees</a></li>
+<li><a href="/national/badge_book">Badge Book</a></li>
+<li><a href="/national/opted_for_emails">Opted For Partner Emails</a></li>
+</ul>
+
+</li>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Content<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/national/troop_documents">Troop Documents</a></li>
+<li><a href="/national/leader_pages">Leader Pages</a></li>
+<li><a href="/national/point_man_pages">Point Man Pages</a></li>
+<li><a href="/national/messages">Messages</a></li>
+</ul>
+
+</li>
+
+</ul>
+<ul class='nav pull-right'>
+<li class='dropdown'>
+<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>hinman@traillifeusa.com<b class="caret"></b></span></a>
+<ul class='dropdown-menu' role='menu'>
+<li><a rel="nofollow" data-method="delete" href="/national_admins/sign_out">Log Out</a></li>
+</ul>
+</li>
+</ul>
+<div class='navbar-form pull-right small'>
+<form action="/national/troops" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="number" id="number" class="search-query" placeholder="Troops" />
+</form>
+
+</div>
+<div class='navbar-form pull-right small'>
+<form action="/national/users" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="last_name" id="last_name" class="search-query" placeholder="Members" />
+<input type="hidden" name="membership_status" id="membership_status" />
+<input type="hidden" name="position_id" id="position_id" />
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='span12'>
+<div class='modal hide fade' id='the_modal'></div>
+<div class='modal hide fade' id='the_wide_modal'></div>
+
+
+<h4>Pettit, Glen A </h4>
+<ul class='nav nav-tabs'>
+<li class='active'><a data-toggle="tab" href="#application">Application</a></li>
+<li><a data-toggle="tab" href="#background_check">Background Check</a></li>
+<li>
+<a data-toggle="tab" href="#notes">Notes (0)
+</a></li>
+<li>
+<a data-toggle="tab" href="#files">Files (0)
+</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active' id='application'>
+<div class='btn-group'>
+<a class="btn btn-danger" confirm="Are you sure you want to regenerate the membership application PDF?" href="/national/membership_applications/21272/regenerate_pdf">Regenerate Application PDF</a>
+<a class="btn" href="/national/users/192012">User Account</a>
+<a class="btn" href="/national/membership_applications/21272/edit">Edit</a>
+<a target="_blank" class="btn" href="https://trooptrack-prod.s3.amazonaws.com/uploads/charter_member/application/21272/membership_application_21272_947.pdf?AWSAccessKeyId=AKIAIYGBXSS2KY37OQKA&amp;Signature=7JRoJsskIqpsuxv2fmSRjBosaXg%3D&amp;Expires=1496301073">PDF</a>
+<a class="btn" href="/national/membership_applications/21272/background_check">Order Background Check</a>
+<a confirm="Are you sure you want to close this application?" class="btn" href="/national/membership_applications/21272/close">Close Application</a>
+<a class="btn" href="/national/membership_applications/21272/record_training">Mark Training Completed</a>
+<a class="btn" href="/national/troops/3299">AK-0226</a>
+<a class="btn" target="_blank" href="/national/users/192012/impersonate">Impersonate</a>
+</div>
+<ul>
+<li>
+<ul class='unstyled'>
+<li>Member Registration Pettit, Glen Andrew (192012)</li>
+<li>$26.00</li>
+<li>2014-10-13 05:53 pm</li>
+</ul>
+</li>
+<li>
+<ul class='unstyled'>
+<li>Membership renewal for Michael Pettit</li>
+<li>$26.00</li>
+<li>2015-11-24 03:57 pm</li>
+</ul>
+</li>
+<li>
+<ul class='unstyled'>
+<li>Membership renewal for Tim Pettit</li>
+<li>$26.00</li>
+<li>2015-11-24 03:57 pm</li>
+</ul>
+</li>
+<li>
+<ul class='unstyled'>
+<li>Membership renewal for Glen Pettit</li>
+<li>$26.00</li>
+<li>2016-01-16 10:40 am</li>
+</ul>
+</li>
+<li>
+<ul class='unstyled'>
+<li>Membership renewal for Tim Pettit</li>
+<li>$26.00</li>
+<li>2016-08-30 09:44 am</li>
+</ul>
+</li>
+<li>
+<ul class='unstyled'>
+<li>Membership renewal for Michael Pettit</li>
+<li>$26.00</li>
+<li>2016-08-30 09:44 am</li>
+</ul>
+</li>
+</ul>
+<h4>
+Member Number 2015-219631
+<br>
+<small>
+ID card exported for printing on 2016-02-02
+<form novalidate="novalidate" class="formtastic charter_member" id="edit_charter_member_21272" action="/national/membership_applications/21272" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="jL7ASdw3Kv5sq6WfWjgSECdBvzg+a1rf75BeQlgEGEkLcJXI1aSd/8V7zYkAbxcndF65CEGtsUf3ej3istM0OA==" /><div class="hidden input optional control-group" id="charter_member_id_card_exported_on_input"><label for="charter_member_id_card_exported_on" class="control-label">Id card exported on</label><div class="controls"><input id="charter_member_id_card_exported_on" type="hidden" name="charter_member[id_card_exported_on]" />
+
+</div></div>
+<input type="submit" name="commit" value="Reset" class="btn" disable_with="Please wait..." />
+</form>
+</small>
+</h4>
+<h4>Troop Chaplain</h4>
+<dl>
+<dt>Start Date</dt>
+<dd>2015-01-06</dd>
+<dt>End Date</dt>
+<dd></dd>
+</dl>
+<div class='row'>
+<div class='span4'>
+<dl>
+<dt>First Name</dt>
+<dd>Glen</dd>
+<dt>Middle Name</dt>
+<dd>Andrew</dd>
+<dt>Last Name</dt>
+<dd>Pettit</dd>
+<dt>Suffix</dt>
+<dd></dd>
+<dt>Aliases</dt>
+<dd></dd>
+<dt>Gender</dt>
+<dd>M</dd>
+<dt>Born On</dt>
+<dd>1974-12-31</dd>
+<dt>Social Security Number</dt>
+<dd>
+***-**-3709
+</dd>
+</dl>
+</div>
+<div class='span4'>
+<dl>
+<dt>Email</dt>
+<dd>pettit.glen@gmail.com</dd>
+<dt>Home Phone</dt>
+<dd>(907) 688-0876</dd>
+<dt>Cell Phone</dt>
+<dd>(907) 360-4829</dd>
+<dt>Employer</dt>
+<dd>Federal Aviation Administration</dd>
+<dt>Work Phone</dt>
+<dd>(907) 271-5260</dd>
+<dt>Marital Status</dt>
+<dd>Married</dd>
+<dt>Ethnicity</dt>
+<dd>Caucasian/White</dd>
+</dl>
+</div>
+<div class='span4'>
+<dl>
+<dt>Current Address</dt>
+<dd>22063 Deer Park Dr, PO Box 672573, Chugiak, AK, 99567-2573</dd>
+<dt>Training</dt>
+<dd>Ordered on 2014-10-14</dd>
+<dd>Completed on 2015-01-06</dd>
+</dl>
+</div>
+</div>
+<h3>Background Information</h3>
+<dl>
+<dt>List any employment or volunteer experience that you have had working with youth, youth organizations and/or adult volunteers</dt>
+<dd>I have worked in the youth and children's ministries in my church for the past 7 years.</dd>
+</dl>
+<dl>
+<dt>Have you lived in your current state of residence continuously for the last 10 years?</dt>
+<dd>No</dd>
+</dl>
+<dl>
+<dt>List all previous residences for last 10 years. Please include the dates you lived at each address</dt>
+<dd>22063 Deer Park Drive - 2009 to Present
+30195 Holiday Dr, Coarsegold CA - 2004 to 2009</dd>
+</dl>
+<dl>
+<dt>List any current memberships (business, community, labor, professional, or religious organizations)</dt>
+<dd>Church in the Wildwood
+ISC2 (Information Security) </dd>
+</dl>
+<dl>
+<dt>List three references that are familiar with your character as it relates to working with youth (Please no relatives)</dt>
+<dd>Greg Vaughn
+21801 KNIK VISTA ST 
+Chugiak AK
+907-863-3024
+Friend/Youth Pastor</dd>
+<dd>Steve Duffy
+20210 PHILADELPHIA WAY, Eagle River AK
+808-781-8619
+Friend</dd>
+<dd>Scott Bleeker
+122 RUSTY ALLEN PL  
+Eagle River AK
+907-332-6466
+Friend/Elder at Church in the Wildwood</dd>
+</dl>
+<h3>Legal History</h3>
+<dl>
+<dt>Has anyone in your household been convicted of a sexual offense?</dt>
+<dd>No</dd>
+</dl>
+<dl>
+<dt>Do you use illegal drugs?</dt>
+<dd>No</dd>
+</dl>
+<dl>
+<dt>Have you ever been convicted of a criminal offense?</dt>
+<dd>No</dd>
+</dl>
+<dl>
+<dt>Have you ever been charged with child neglect or abuse?</dt>
+<dd>No</dd>
+</dl>
+<dl>
+<dt>Has your driver's license ever been suspended or revoked?</dt>
+<dd>No</dd>
+</dl>
+<dl>
+<dt>Other than the above, is there any fact or circumstance involving you or your background that would call into question your being entrusted with the supervision, guidance, and care of young people?</dt>
+<dd>No</dd>
+<dl>
+<dt>If you answered yes to any of the above, or would like to explain additional issues that may appear on the background check, please explain below:</dt>
+<dd></dd>
+</dl>
+</dl>
+<h3>Additional Information</h3>
+<dl>
+<dt>Why do you want to be a volunteer in Trail Life USA?</dt>
+<dd>My boys are involved with the local Trail Life troop and I would like to be involved with them and would like to be used by God in the Spiritual training of my boys and other boys in our community.</dd>
+<dt>Have you ever been removed or refused from working or volunteering with children.</dt>
+<dd>false</dd>
+<dd></dd>
+<dt>Are you currently a member of the Boy Scouts of America or have you been?</dt>
+<dd>false</dd>
+<dd></dd>
+<dt>Has your membership ever been denied or revoked by the Boy Scouts of America or any other youth organization?</dt>
+<dd>false</dd>
+<dd></dd>
+<dt>Please list the name and address of churches with which you have been a member or otherwise affiliated with during the last three years.</dt>
+<dd>Church in the Wildwood, 16832 Hanson Drive, Eagle River, Alaska 99577</dd>
+</dl>
+<br>
+<p><span style="background-color:rgb(245, 245, 245); color:rgb(51, 51, 51); font-family:arial,sans-serif; font-size:small">By signing this Application for a volunteer leadership position, I agree that I have read and understand the Application and attached information and agree to adhere to and comply with the Trail Life USA (&ldquo;Trail Life&rdquo;) Mission Statement, Oath, Code of Conduct, <a href="http://www.traillifeusa.com/whoweare/" target="_blank">Statement of Faith and Values</a>&nbsp;and all other Trail Life rules, policies and procedures. I affirm that the information I have provided in this Application is true and correct and understand that the information may be verified, if necessary, by contacting any persons or organizations that may have information concerning me, and by conducting a criminal background check. I hereby release and agree to hold harmless from liability any person or organization that provides such information. I also agree to hold harmless from liability Trail Life, the Charter Organization and their officers, directors, employees and volunteers.&nbsp;</span></p>
+
+<div class='clearfix'></div>
+<br>
+<dl>
+<dt>Signature</dt>
+<dd>Glen Pettit</dd>
+<dd>2014-10-13</dd>
+</dl>
+<h3>Renewals</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Signed</th>
+<th>Purchased</th>
+<th>FS</th>
+<th>Certified</th>
+<th>Certified By</th>
+<th>Approved On</th>
+<th>Approved By</th>
+<th>Application</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="renewal" id="renewal_18390"><td>approved</td>
+<td>2016-01-16</td>
+<td>2016-01-16</td>
+<td>N/A</td>
+<td>2016-01-16</td>
+<td>
+<a href="/national/users/80838">Danny Brooks</a>
+</td>
+<td>2016-01-19</td>
+<td>
+</td>
+<td>
+<a target="_blank" href="https://trooptrack-prod.s3.amazonaws.com/uploads/renewal/application/18390/renewal_application_18390_7023.pdf?AWSAccessKeyId=AKIAIYGBXSS2KY37OQKA&amp;Signature=96TpdxAopdxBlFC7r3DYExXhhTc%3D&amp;Expires=1496301073">Download</a>
+</td>
+<td>
+<div class='btn-group'>
+<a class="btn" data-remote="true" href="/national/renewals/18390/edit">Edit
+</a><a class="btn" data-remote="true" data-method="delete" data-confirm="Are you sure you want to delete this renewal?" href="/national/renewals/18390">Delete
+</a></div>
+</td>
+</tr><tr class="renewal" id="renewal_40023"><td>new</td>
+<td>TBD</td>
+<td></td>
+<td>N/A</td>
+<td></td>
+<td>
+</td>
+<td></td>
+<td>
+</td>
+<td>
+</td>
+<td>
+<div class='btn-group'>
+<a class="btn" data-remote="true" href="/national/renewals/40023/edit">Edit
+</a><a class="btn" data-remote="true" data-method="delete" data-confirm="Are you sure you want to delete this renewal?" href="/national/renewals/40023">Delete
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class='tab-pane' id='background_check'>
+<a class="btn" href="/national/membership_applications/21272/background_check">Order Background Check</a>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Order ID</th>
+<th>Ordered On</th>
+<th>PMM Submission Status</th>
+<th>PMM Result Status</th>
+<th>Package Service Codes</th>
+<th>Results</th>
+</tr>
+</thead>
+<tbody>
+<tr class="background_check" id="background_check_6768"><td></td>
+<td>2014-10-14 04:56 am</td>
+<td>SUCCESS</td>
+<td></td>
+<td>
+PLUS
+<ul>
+<li>combo</li>
+<li>StateCriminal</li>
+</ul>
+</td>
+<td>
+<a target="_blank" href="https://services.priorityresearch.com/webservice/getreport.cfm?ReportID=1627040&amp;ReportKey=5132704F-142D-4405-8FE7-A0A96682609F">PMM Recommendation: Accept</a>
+
+</td>
+</tr><tr>
+<td colspan='5'>&nbsp;</td>
+<td>
+<div class='btn-group'>
+<a data-confirm="Are you sure?" class="btn btn-danger" data-remote="true" rel="nofollow" data-method="delete" href="/national/background_checks/6768">Delete</a>
+<a data-confirm="Are you sure?" class="btn" rel="nofollow" data-method="delete" href="/national/background_checks/6768?reorder=true">Delete &amp; Reorder</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class='tab-pane' id='notes'>
+<a class="btn" data-remote="true" href="/national/membership_applications/21272/new_note">Add Note</a>
+<br>
+<br>
+<div id='add-here'></div>
+<div id='all-notes'>
+
+</div>
+</div>
+<div class='tab-pane' id='files'>
+<a class="btn" href="/national/membership_applications/21272/new_attachment">Add File</a>
+<br>
+<br>
+<div id='add-here'></div>
+<div id='all-notes'>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='navbar navbar-fixed-bottom'>
+<div class='centered'>
+&copy; TroopTrack 2012
+</div>
+</div>
+<!--
+Javascripts
+==================================================
+-->
+<!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>
